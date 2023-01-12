@@ -6,7 +6,7 @@
 /*   By: mbouderr <mbouderr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 14:38:13 by mbouderr          #+#    #+#             */
-/*   Updated: 2022/12/28 06:35:25 by mbouderr         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:56:41 by mbouderr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ char	*ft_strjoin(char *s1, char *s2);
 size_t	ft_strlen(char *str);
 ssize_t	ft_strchr(char *s, int c);
 char	*ft_substr(char *s, unsigned int start, size_t len);
-char	*Cleaner(char *dirtline);
+char	*cleaner(char *dirtline);
 void	ft_bzero(void *s, size_t n);
-char	*Linereader(int fd, int *readcounter, char *buffereader);
+char	*linereader(int fd, int *readcounter, char *buffereader);
 
 #endif

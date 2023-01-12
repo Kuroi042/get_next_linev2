@@ -6,7 +6,7 @@
 /*   By: mbouderr <mbouderr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 06:18:18 by mbouderr          #+#    #+#             */
-/*   Updated: 2022/12/28 06:35:00 by mbouderr         ###   ########.fr       */
+/*   Updated: 2023/01/12 16:48:43 by mbouderr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (ptr);
 }
+
 size_t	ft_strlen(char *str)
 {
 	int	i;
@@ -39,6 +40,7 @@ size_t	ft_strlen(char *str)
 	}
 	return (i);
 }
+
 char	*ft_strjoin(char *s1, char *s2)
 {
 	size_t	i;
@@ -68,7 +70,7 @@ char	*ft_strjoin(char *s1, char *s2)
 }
 
 ssize_t	ft_strchr(char *s, int c)
-	// if 'c is available return (i) else return (-1)
+// if 'c is available return (i) else return (-1)
 {
 	int	len;
 	int	i;
@@ -85,6 +87,7 @@ ssize_t	ft_strchr(char *s, int c)
 	}
 	return (-1);
 }
+
 char	*ft_substr(char *s, unsigned int start, size_t len)
 {
 	size_t	i;
@@ -102,18 +105,4 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 	}
 	str[j] = '\0';
 	return (str);
-}
-
-void	ft_bzero(void *s, size_t n)
-{
-	size_t i;
-	char *b;
-
-	i = 0;
-	b = (char *)s;
-	while (i < n)
-	{
-		b[i] = '\0';
-		i++;
-	}
 }
